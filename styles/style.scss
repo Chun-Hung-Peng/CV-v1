@@ -140,23 +140,7 @@ main {
         }
     }
 
-    section.contact {
-        width: 100%;
-        height: 50vh;
-        display: flex;
-        justify-content: center;
 
-        div.contactbox {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-            h2 {
-                font-size: 2rem;
-                margin: 1rem 0;
-            }
-        }
-    }
 }
 
 // third page
@@ -197,6 +181,7 @@ main.portfolio {
                 margin-right: 2rem;
                 min-width: 400px;
 
+
                 a {
                     text-decoration: none;
                     color: #113285;
@@ -234,6 +219,26 @@ main.portfolio {
 
     }
 
+}
+
+//contact page
+main.contact {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div.contactbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2 {
+            font-size: 1.5rem;
+            margin: 1rem 0;
+        }
+    }
 }
 
 

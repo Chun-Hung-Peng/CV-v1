@@ -150,35 +150,6 @@ main section.secondPic div.secondBlue {
   z-index: -1;
 }
 
-main section.contact {
-  width: 100%;
-  height: 50vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-main section.contact div.contactbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-main section.contact div.contactbox h2 {
-  font-size: 2rem;
-  margin: 1rem 0;
-}
-
 main.portfolio {
   margin-top: 1rem;
   width: 100%;
@@ -258,6 +229,38 @@ main.portfolio div.portContent section.portBox-re div.portInfo {
 main.portfolio div.portContent section.portBox-re div.portInfo a {
   text-decoration: none;
   color: #113285;
+}
+
+main.contact {
+  width: 100%;
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main.contact div.contactbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main.contact div.contactbox h2 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
 }
 
 footer {
