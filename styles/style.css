@@ -55,16 +55,6 @@ header nav ul li a {
   background-color: rgba(88, 178, 220, 0.3);
 }
 
-.bigBall {
-  position: absolute;
-  top: 40vh;
-  right: -10vw;
-  width: 30vw;
-  height: 30vw;
-  border-radius: 50%;
-  background-color: rgba(88, 178, 220, 0.3);
-}
-
 main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -232,8 +222,11 @@ main.portfolio div.portContent section.portBox-re div.portInfo a {
 }
 
 main.contact {
+  background-image: url(../assets/images/contact-bk.jpg);
+  background-color: #000;
+  background-size: cover;
   width: 100%;
-  height: 60vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -243,6 +236,18 @@ main.contact {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  z-index: -2;
+}
+
+main.contact div.mask {
+  background-color: #000;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
 }
 
 main.contact div.contactbox {
@@ -261,6 +266,7 @@ main.contact div.contactbox {
 main.contact div.contactbox h2 {
   font-size: 1.5rem;
   margin: 1rem 0;
+  color: white;
 }
 
 footer {
@@ -307,10 +313,14 @@ footer a {
             justify-content: center;
   }
   main section.secondPic img {
-    width: 30vw;
+    width: 35vw;
   }
   main section.secondPic div.secondBlue {
     display: none;
+  }
+  main.portfolio div.portContent section.portBox img,
+  main.portfolio div.portContent section.portBox-re img {
+    min-width: 30vw;
   }
 }
 
@@ -354,13 +364,46 @@ footer a {
     font-size: 1.5rem;
   }
   header nav ul {
+    width: 100vw;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   header nav ul li {
-    padding: 1rem;
+    padding: 0.5rem;
+  }
+  header nav ul li a {
+    font-size: 1rem;
+  }
+  main.portfolio div.portContent section.portBox,
+  main.portfolio div.portContent section.portBox-re {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main.portfolio div.portContent section.portBox img,
+  main.portfolio div.portContent section.portBox-re img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    max-width: 90vw;
+    margin: 1rem;
+  }
+  main.portfolio div.portContent section.portBox div.portInfo,
+  main.portfolio div.portContent section.portBox-re div.portInfo {
+    width: 100vw;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin: 2rem;
   }
   footer {
     display: -webkit-box;
