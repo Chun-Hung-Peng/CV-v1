@@ -74,6 +74,7 @@ main section.left {
 main section.left h1 {
   font-size: 4rem;
   color: #0277BD;
+  font-family: 'Roboto Mono', monospace;
 }
 
 main section.left p {
