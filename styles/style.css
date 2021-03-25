@@ -420,6 +420,15 @@ footer a {
             order: 2;
     margin: 2rem;
   }
+  main.contact {
+    height: 80vh;
+  }
+  main.contact div.contactbox {
+    margin-top: 5rem;
+  }
+  main.contact div.contactbox h2 {
+    font-size: 1rem;
+  }
   footer {
     display: -webkit-box;
     display: -ms-flexbox;

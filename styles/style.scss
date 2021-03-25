@@ -403,6 +403,18 @@ footer {
         }
     }
 
+    main.contact {
+        height: 80vh;
+
+        div.contactbox {
+            margin-top: 5rem;
+
+            h2 {
+                font-size: 1rem;
+            }
+        }
+    }
+
     footer {
         display: flex;
         justify-content: center;
